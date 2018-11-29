@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lights and robots</string>
+    <string name="lights_screen">Lights</string>
+    <string name="robots_screen">Robots</string>
+</resources>
