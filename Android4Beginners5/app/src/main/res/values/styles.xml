@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents">
+        <item name="colorPrimary">@color/daftGreen</item>
+        <item name="colorPrimaryVariant">@color/daftGreenDark</item>
+        <item name="colorSecondary">@color/daftBlue</item>
+    </style>
+
+</resources>

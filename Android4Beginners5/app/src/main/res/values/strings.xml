@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Jokes vendor</string>
+    <string name="deposit_coin_label">Deposit coin</string>
+    <string name="current_coin_label">You\'ve put %d coins</string>
+    <string name="enter_choco_bar_name_hint">Princess Polo, Venus or Silky Way</string>
+    <string name="vend_label">Vend</string>
+    <string name="nope">Nope!</string>
+    <string name="error">Error</string>
+    <string name="yay">Yay!</string>
+</resources>
