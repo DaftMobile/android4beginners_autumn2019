@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/pokemonRed</item>
+        <item name="colorPrimaryVariant">@color/pokemonCrimson</item>
+        <item name="colorSecondary">@color/pokemonBlue</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+</resources>
