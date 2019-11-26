@@ -9,24 +9,26 @@
     <!-- Większy margines polami, font w kolorze głównym, wyśrodkować tekst! -->
     <EditText
         android:id="@+id/firstName"
+        style="@style/CenteredEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:hint="Imię" />
+        android:hint="@string/name_hint"
+        />
 
     <EditText
         android:id="@+id/lastName"
+        style="@style/CenteredEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/firstName"
-        android:hint="Nazwisko" />
+        android:hint="@string/last_name_hint" />
 
-    <!-- Ma wyglądać bardziej material design i mieć większy font! -->
     <Button
         android:id="@+id/acceptButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Akceptuję" />
+        android:text="@string/accept_label" />
 
 </RelativeLayout>

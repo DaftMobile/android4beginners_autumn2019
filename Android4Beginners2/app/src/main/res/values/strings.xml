@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Layouts demo</string>
+    <string name="app_name" translatable="false">Layouts demo</string>
+    <string name="name_hint">Imię</string>
+    <string name="last_name_hint">Nazwisko</string>
+    <string name="accept_label">Akceptuję</string>
+    <string name="hello_world">Hello, world!</string>
+    <string name="change_text">Zmień tekst</string>
 </resources>

@@ -6,4 +6,10 @@
         <item name="colorSecondary">@color/daftBlue</item>
     </style>
 
+    <style name="CenteredEditText">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
 </resources>

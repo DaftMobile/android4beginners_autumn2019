@@ -8,13 +8,13 @@
         android:id="@+id/red"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:background="#F00" />
+        android:background="#F00"
+        android:layout_alignParentStart="true"/>
 
     <View
         android:id="@+id/green"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/red"
         android:background="#0F0" />
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name_hint">First name</string>
+    <string name="accept_label">Accept</string>
+    <string name="last_name_hint">Last name</string>
+    <string name="hello_world">Hello, world!</string>
+    <string name="change_text">Change text</string>
+</resources>
