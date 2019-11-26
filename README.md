@@ -9,6 +9,10 @@
 
 ![Plan zajęć](assets/schedule.png)
 
+## Lifecycle
+
+![Schemat cyklu życia Activity z nazwami metod](assets/lifecycle.svg)
+
 ## Materiały
 
 - [Kotlin Koans](http://kotlinlang.org/docs/tutorials/koans.html)
