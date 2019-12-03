@@ -13,5 +13,6 @@ class ExternalSourceRobotsViewModel(private val robotDataSource: RobotsDataSourc
 
     override fun addRobot() {
         robotDataSource.addNew()
+        mutableLiveData.value = robotDataSource.getRobots().joinToString("\n") { it.name }
     }
 }
