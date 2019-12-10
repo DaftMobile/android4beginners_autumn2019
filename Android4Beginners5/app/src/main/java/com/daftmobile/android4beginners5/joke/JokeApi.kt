@@ -2,8 +2,15 @@
 
 package com.daftmobile.android4beginners5.joke
 
-interface JokeApi {
-    // /api/hello
+import com.daftmobile.android4beginners5.joke.gson.Joke
+import okhttp3.ResponseBody
+import retrofit2.Call
+import retrofit2.http.GET
 
-    // /api/joke
+interface JokeApi {
+    @GET("/api/hello")
+    fun greetings(): Call<ResponseBody>
+
+    @GET("/api/joke")
+    fun getJoke(): Call<Joke>
 }

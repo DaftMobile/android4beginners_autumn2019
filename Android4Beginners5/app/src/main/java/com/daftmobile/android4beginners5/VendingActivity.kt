@@ -4,12 +4,13 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.daftmobile.android4beginners5.sweets.SweetsVendingViewModel
+import androidx.lifecycle.Observer
+import com.daftmobile.android4beginners5.joke.JokeVendingViewModel
 import kotlinx.android.synthetic.main.activity_vending.*
 
 class VendingActivity : AppCompatActivity() {
 
-    private val viewModel: VendingViewModel by viewModels<SweetsVendingViewModel>()
+    private val viewModel: VendingViewModel by viewModels<JokeVendingViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +20,9 @@ class VendingActivity : AppCompatActivity() {
     }
 
     private fun observeData() {
-        // TODO Implement
+        viewModel.itemVended().observe(this, Observer(vendedItemTextView::setText))
+        viewModel.vendingError().observe(this, Observer(::showVendingErrorDialog))
+        viewModel.currentDeposit().observe(this, Observer(this::updateDeposit))
     }
 
     private fun setupClickListeners() {

@@ -25,9 +25,17 @@ class SweetsVendingViewModel : ViewModel(), VendingViewModel {
     }
 
     override fun vend(item: String) {
-        val bar = vendingMachine.vend(item)
-        chocolateBarLiveData.value = bar.name
-        refreshDeposit()
+        try {
+            val bar = vendingMachine.vend(item)
+            chocolateBarLiveData.value = bar.name
+            refreshDeposit()
+        } catch (outOfStock: OutOfStockException) {
+            errorLiveData.value = "Skończyło się"
+        } catch (insufficient: InsufficientFundsException) {
+            errorLiveData.value = "Potrzeba jescze ${insufficient.coinsNeeded} monet"
+        } catch (itemNotFound: ItemNotFoundException) {
+            errorLiveData.value = "Nie znaleziono ${itemNotFound.itemName}"
+        }
     }
 
     private fun refreshDeposit() {
